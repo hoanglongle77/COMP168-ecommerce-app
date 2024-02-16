@@ -32,7 +32,7 @@ const Navigation = () => {
           >
             <SearchForm />
             <ul className={`navbar-nav ${styles.mobileMenu}`}>
-              <li className={`${styles.menuItem} nav-item`}>
+              <li className={`nav-item`}>
                 <Link className={`${styles.headerLink} nav-link`} href="#">
                   <i className={`${styles.profile} bi bi-person-circle`}></i>
                   Profile
