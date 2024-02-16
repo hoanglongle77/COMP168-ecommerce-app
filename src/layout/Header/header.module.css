@@ -1,0 +1,39 @@
+.navBar {}
+
+.menuContainer {}
+
+.shopBrand {}
+
+.menuContainer {}
+
+.profile,
+.message,
+.orders,
+.myCart {
+    font-size: 25px;
+}
+
+@media only screen and (min-width: 992px) {
+    .headerLink {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    /* .mobileMenu {
+        flex-direction: row;
+        justify-content: space-around;
+    } */
+
+    /* .menuItem {} */
+
+    .profile,
+    .message,
+    .orders,
+    .myCart {
+        margin-right: 10px;
+    }
+}
