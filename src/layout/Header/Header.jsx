@@ -1,8 +1,7 @@
-"use client";
 import React from "react";
 import Link from "next/link";
-import styles from "./header.module.css";
 import SearchForm from "@/components/SearchForm/SearchForm";
+import styles from "./header.module.css";
 
 const Navigation = () => {
   return (

@@ -1,9 +1,8 @@
-"use client";
 import React from "react";
-import Image from "next/image";
 import styles from "./footer.module.css";
 import FooterItems from "./FooterItems/FooterItem";
 import {
+  footerBottomText,
   information,
   informationLinks,
   paragraph,
@@ -13,7 +12,7 @@ import {
   supportLinks,
   useful,
   usefulLinks,
-} from "@/libs/footerData";
+} from "@/libs/data";
 import FooterBrand from "./FooterBrand/FooterBrand";
 
 const Footer = () => {
@@ -40,7 +39,12 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className={`${styles.footerBottom}`}></div>
+          <hr className={`${styles.footerHr}`} />
+          <div
+            className={`${styles.footerBottom} d-flex justify-content-center`}
+          >
+            <p>{footerBottomText}</p>
+          </div>
         </div>
       </footer>
     </>
