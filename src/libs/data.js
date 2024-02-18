@@ -1,5 +1,10 @@
-// Data for header
-export const links = [
+//1. Route data for header
+export const logo = "/images/logo.png";
+export const logoText = "Lenovo";
+export const menu = "Menu";
+export const linksMenu = [
+  { label: "Profile", url: "/" },
+  { label: "Order", url: "/about" },
   { label: "Profile", url: "/" },
   { label: "Order", url: "/about" },
   { label: "Find Store", url: "/find-store" },
@@ -7,7 +12,7 @@ export const links = [
   { label: "Blogs", url: "/blogs" },
 ];
 
-// Data for footer
+//2. Route data for footer
 export const paragraph =
   "You might remember the Lenovo computer commercials in which a youth reports this exciting news to his friends.";
 
