@@ -1,3 +1,4 @@
+import SearchForm from "@/components/SearchForm/SearchForm";
 import Footer from "@/layout/Footer/Footer";
 import Header from "@/layout/Header/Header";
 import Navigation from "@/layout/Navigation/Navigation";
@@ -9,6 +10,7 @@ const StoreLayout = ({
   return (
     <>
       <Header />
+      <SearchForm />
       {/* <Navigation /> */}
       {children}
       <Footer />

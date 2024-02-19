@@ -8,34 +8,34 @@ const CustomCarousel = (props) => {
     <div className={`col-xxl-12 col-lg-12`}>
       <div
         id="carouselExampleControls"
-        className="carousel slide"
+        className={`carousel slide`}
         data-bs-ride="carousel"
       >
-        <div className="carousel-inner">
+        <div className={`carousel-inner`}>
           {data.map((image) => (
             <ImageCard key={image.id} image={image} />
           ))}
         </div>
         <button
-          className="carousel-control-prev"
+          className={`carousel-control-prev`}
           type="button"
           data-bs-target="#carouselExampleControls"
           data-bs-slide="prev"
         >
           <span
-            className="carousel-control-prev-icon"
+            className={`carousel-control-prev-icon`}
             aria-hidden="true"
           ></span>
           <span className="visually-hidden">Previous</span>
         </button>
         <button
-          className="carousel-control-next"
+          className={`carousel-control-next`}
           type="button"
           data-bs-target="#carouselExampleControls"
           data-bs-slide="next"
         >
           <span
-            className="carousel-control-next-icon"
+            className={`carousel-control-next-icon`}
             aria-hidden="true"
           ></span>
           <span className="visually-hidden">Next</span>
@@ -50,7 +50,7 @@ const ImageCard = (props) => {
   return (
     <>
       <div className="carousel-item active">
-        <div className="carousel-caption">
+        <div className={`carousel-caption`}>
           <h5>Hello</h5>
         </div>
 
