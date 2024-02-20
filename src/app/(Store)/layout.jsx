@@ -1,7 +1,7 @@
 import SearchForm from "@/components/SearchForm/SearchForm";
-import Footer from "@/layout/Footer/Footer";
-import Header from "@/layout/Header/Header";
-import Navigation from "@/layout/Navigation/Navigation";
+import Header from "@/layout/StoreUI/Header/Header";
+import Footer from "@/layout/StoreUI/Footer/Footer";
+import Navigation from "@/layout/StoreUI/Navigation/Navigation";
 import React from "react";
 
 const StoreLayout = ({

@@ -1,7 +1,13 @@
 import React from "react";
+import LoginForm from "@/components/AuthComponents/LoginForm/LoginForm";
+import styles from "./login.module.css";
 
 const Login = () => {
-  return <div className="text-center h1">Login Page</div>;
+  return (
+    <div className={"container"}>
+      <LoginForm />
+    </div>
+  );
 };
 
 export default Login;
