@@ -41,7 +41,7 @@ const SearchForm = () => {
               <option>Kids</option>
             </select>
             <button className={`btn btn-primary`}>
-              <i class="bi bi-search pe-1"></i>Search
+              <i className={`bi bi-search pe-1`}></i>Search
             </button>
           </div>
         </form>

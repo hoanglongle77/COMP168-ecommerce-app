@@ -6,59 +6,40 @@ import styles from "./header.module.css";
 const Navigation = () => {
   return (
     <>
-      <nav className={`${styles.navBar} navbar navbar-expand-lg bg-light`}>
-        <div className={`${styles.menuContainer} container-fluid`}>
-          <a
-            className={`${styles.shopBrand} my-lg-3 ms-lg-5 navbar-brand fw-bold`}
-            href="#"
-          >
-            My Store
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div
-            className={` collapse navbar-collapse justify-content-around`}
-            id="navbarSupportedContent"
-          >
-            <SearchForm />
-            <ul className={`navbar-nav ${styles.mobileMenu}`}>
-              <li className={`nav-item`}>
-                <Link className={`${styles.headerLink} nav-link`} href="#">
-                  <i className={`${styles.profile} bi bi-person-circle`}></i>
-                  Profile
+      <section className={`header-main border-bottom py-3`}>
+        <div className={`container`}>
+          <div className={`row gx-2 gy-3`}>
+            <div className={`col-lg col-md col-6 flex-grow-0`}>
+              <Link href="#">My Shop</Link>
+            </div>
+            <div className={`col-lg col-md col-6 flex-grow-0`}>
+              <div className={`dropdown float-end`}></div>
+            </div>
+            <div className={`col-lg col-md order-lg-last`}>
+              <div className={`float-md-end`}>
+                <Link href="/login" className={`btn btn-light me-2`}>
+                  <i
+                    className={`${styles.loginIcon} bi bi-person-circle me-2`}
+                  ></i>
+                  Sign In
                 </Link>
-              </li>
-              <li className="nav-item">
-                <Link className={`${styles.headerLink} nav-link`} href="#">
-                  <i className={`${styles.message} bi bi-chat-dots-fill`}></i>
-                  Message
+                <Link href="#" className={`btn btn-light me-2`}>
+                  <i
+                    className={`${styles.wishListIcon} bi bi-bag-heart-fill`}
+                  ></i>{" "}
+                  Wish List
                 </Link>
-              </li>
-              <li className="nav-item">
-                <Link className={`${styles.headerLink} nav-link`} href="#">
-                  <i className={`${styles.orders} bi bi-box2-heart-fill`}></i>
-                  Orders
+                <Link href="#" className={`btn btn-light me-2`}>
+                  <i
+                    className={`${styles.myCartIcon} bi bi-bag-check-fill me-2`}
+                  ></i>
+                  My Cart
                 </Link>
-              </li>
-              <li className="nav-item">
-                <Link className={`${styles.headerLink} nav-link`} href="#">
-                  <i className={`${styles.myCart} bi bi-bag-check-fill`}></i>
-                  Cart
-                </Link>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
+      </section>
     </>
   );
 };
